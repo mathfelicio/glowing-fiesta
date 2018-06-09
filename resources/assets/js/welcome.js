@@ -17,7 +17,10 @@ Vue.use(VueResource);
 Vue.http.headers.common['X-CSRF-TOKEN'] = $('meta[name=csrf-token]').attr('content');
 
 const vue = new Vue({
-
+    el: "#app",
+    data: {
+        message: "Hello World!"
+    }
 }).$mount('#app');
 
 

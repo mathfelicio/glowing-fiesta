@@ -156,12 +156,11 @@ return [
          */
         ProvaB4\Providers\AppServiceProvider::class,
         ProvaB4\Providers\AuthServiceProvider::class,
-        ProvaB4\Providers\AnnotationsServiceProvider::class,
-        // ProvaB4\Providers\BroadcastServiceProvider::class,
         ProvaB4\Providers\EventServiceProvider::class,
         ProvaB4\Providers\RouteServiceProvider::class,
         Laracasts\Flash\FlashServiceProvider::class,
         Prettus\Repository\Providers\RepositoryServiceProvider::class,
+        Collective\Html\HtmlServiceProvider::class
 
     ],
 
@@ -211,7 +210,8 @@ return [
         'URL' => Illuminate\Support\Facades\URL::class,
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
-
+        'Form' => Collective\Html\FormFacade::class,
+        'Html' => Collective\Html\HtmlFacade::class
     ],
 
 ];
