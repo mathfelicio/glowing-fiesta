@@ -158,6 +158,7 @@ return [
         ProvaB4\Providers\AuthServiceProvider::class,
         ProvaB4\Providers\EventServiceProvider::class,
         ProvaB4\Providers\RouteServiceProvider::class,
+        ProvaB4\Providers\RepositoryServiceProvider::class,
         Laracasts\Flash\FlashServiceProvider::class,
         Prettus\Repository\Providers\RepositoryServiceProvider::class,
         Collective\Html\HtmlServiceProvider::class

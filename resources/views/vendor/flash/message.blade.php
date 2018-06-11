@@ -6,21 +6,31 @@
             'body'       => $message['message']
         ])
     @else
-        <div class="alert
-                    alert-{{ $message['level'] }}
-                    {{ $message['important'] ? 'alert-important' : '' }}"
-                    role="alert"
-        >
-            @if ($message['important'])
-                <button type="button"
-                        class="close"
-                        data-dismiss="alert"
-                        aria-hidden="true"
-                >&times;</button>
-            @endif
 
-            {!! $message['message'] !!}
+        <div class="col s12 m12 container">
+            <div class="card blue darken-1">
+            <div class="card-content white-text">
+                <i class="icon-{{ $message['level'] }} fa
+                @switch($message['level'])
+                @case('warning')
+                        fa-exclamation-circle
+                        @break
+                @case('success')
+                        fa-check-circle
+                        @break
+                @case('info')
+                        fa-info-circle
+                        @break
+                @case('danger')
+                        fa-times-circle
+                        @break
+                @endswitch
+                        margin-right-10"></i>
+                <p>{!! $message['message'] !!}</p>
+            </div>
+            </div>
         </div>
+
     @endif
 @endforeach
 

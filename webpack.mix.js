@@ -18,9 +18,12 @@ mix.copy('node_modules/font-awesome', 'public/libs/font-awesome')
     .copy('node_modules/animate.css/animate.min.css', 'public/libs/animate')
     .copy('node_modules/jquery.maskedinput/src/jquery.maskedinput.js', 'public/libs/jquery.maskedinput.js');
 
-mix.copy('resources/assets/img', 'public/images');
-
 mix.js('resources/assets/js/main.js', 'public/js')
-    .js('resources/assets/js/welcome.js', 'public/js');
+    .js('resources/assets/js/contato/index.js', 'public/js')
+    .js('resources/assets/js/contato/index.js', 'public/js/contato')
+    .js('resources/assets/js/contato/create.js', 'public/js/contato');
+
+mix.sass('resources/assets/sass/main.sass', 'public/css/style.min.css');
+
 
 

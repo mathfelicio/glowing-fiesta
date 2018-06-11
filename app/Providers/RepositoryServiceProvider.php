@@ -23,7 +23,8 @@ class RepositoryServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->app->bind(\ProvaB4\Repositories\TesteRepository::class, \ProvaB4\Repositories\TesteRepositoryEloquent::class);
+        $this->app->bind(\ProvaB4\Repositories\ContatoRepository::class, \ProvaB4\Repositories\ContatoRepositoryEloquent::class);
+        $this->app->bind(\ProvaB4\Repositories\TelefoneRepository::class, \ProvaB4\Repositories\TelefoneRepositoryEloquent::class);
         //:end-bindings:
     }
 }
